@@ -1,0 +1,15 @@
+version: '3.1'
+
+services:
+  imap-parser:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    container_name: imap-parser
+    environment:
+     - FROM_EMAIL=
+     - GMAIL=
+     - GMAIL_PASSWORD=
+     - NODE_ENV=

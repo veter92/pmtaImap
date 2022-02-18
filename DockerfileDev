@@ -1,0 +1,5 @@
+FROM node:16.2.0-alpine
+WORKDIR /usr/src/app
+RUN yarn install
+RUN yarn global add nodemon
+CMD [ "node", "index.js" ]
